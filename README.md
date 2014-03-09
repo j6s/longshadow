@@ -17,3 +17,5 @@ h1.shadow {
     .longshadowIcon(@color: #f19103);
 }
 ```
+
+For more information, see ![http://thephpjo.de/longshadow](http://thephpjo.de/longshadow)
