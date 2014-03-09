@@ -1,0 +1,19 @@
+.longshadow (@depth, @color, @textShadowString: "0px 0px 0px black") when (@depth > 0) {
+  @newTextShadowString: "@{textShadowString},@{depth}px @{depth}px 0px @{color}";
+  .longshadow(@depth - 1, @color, @newTextShadowString);
+}
+
+.longshadow (@depth, @color, @textShadowString) when (@depth < 1) {
+  text-shadow: ~"@{textShadowString}";
+}
+
+.longshadowIcon(@color: #f19103, @secondColor: #fff, @depth: 45, @padding: 15px, @fontSize: 25px, @borderSize: 3px) {
+  border: @borderSize solid @secondColor;
+  color: @secondColor;
+  background: @color;
+  .longshadow(@depth, darken(@color,10%));
+  overflow: hidden;
+  padding: @padding;
+  display: inline-block;
+  font-size: @fontSize;
+}

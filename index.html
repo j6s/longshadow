@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+
+  <div class="totalWrapper">
+    <section class="teaser">
+      <div class="content">
+        <h1>LONGSHADOW</h1>
+        <h3>a simple LESS mixin</h3>
+      </div>
+    </section>
+    <section class="white">
+      <div class="content">
+        <div class="iconGreen">what is longshadow?</div><br />
+        <p>longshadow.less is a simple LESS mixin, that lets you create awesome longshadow headings and icons unsing the power of CSS3 - no images required. It builds upon the article <a href="http://mattlabert.ca/blog/create-a-flat-long-shadow-icon-with-css3/">Create a Flat, Long Shadow Icon with CSS3</a> by <a href="http://mattlabert.ca">Matt Lambert</a></p><br/>
+        <div class="iconGreen">how does it work?</div><br />
+          <p>the heart of longshadow.less is the .longshadow mixin. It is really easy to use:</p>
+          <pre><code>
+h1.shadow {
+    // creates a #555 colored shadow, 50px long
+    .longshadow(50,#555);
+}
+
+.awesomeIcon {
+    // creates a #f19103 - colored icon
+    .longshadowIcon(@color: #f19103);
+}
+          </code></pre>
+          <br/>
+        <div class="iconGreen">but wait - there's more</div><br />
+          <p>the .longshadowIcon mixin can be adjusted to your need. Simply pass one these variables with it:
+            <ul>
+              <li><b>@color</b> - the main / background color of the icon</li>
+              <li><b>@secondColor</b> - the accent color of the icon (used for the border and the text)</li>
+              <li><b>@depth</b> - the length of the shadow. Adjust this if you see the end of it</li>
+              <li><b>@padding</b> - the padding used for the icon</li>
+              <li><b>@fontSize</b> - i think you can guess what this does, can't you?</li>
+              <li><b>@borderSize</b> - thickness of the border</li>
+            </ul>
+          </p><br/>
+
+          <div class="iconGreen">before usage</div>
+          <p>
+            before using this you have to be clear about one thing: <br/>
+            longshadow.css creates imense amounts of css output. For this page the CSS file is about 6kb, most of it for the big shadow in the heading and the small subheadings.
+          </p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import "longshadow.less" ;
+
+@mainThemeColor: #73cc73;
+@white: #fff;
+@gray: #eee;
+
+.iconGreen {
+  .longshadowIcon(@color: @mainThemeColor);
+  text-transform: uppercase;
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial";
+  color: #555;
+  background: @gray;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 40px;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 75px;
+  min-height: 300px;
+  box-sizing: border-box;
+      width: 100%;
+
+
+  .content {
+    max-width: 600px;
+    margin: 0px auto;
+  }
+
+  &.teaser {
+    background: @mainThemeColor;
+    padding-bottom: 35px;
+    text-align: center;
+
+    h3 {
+      color: @gray;
+      text-align: right;
+      font-weight: 200;
+    }
+
+    h1 {
+      color: @white;
+      font-weight: 400;
+      font-size: 65px;
+      margin: 40px 0 20px 0;
+
+      .longshadow(200,darken(@mainThemeColor,10%));
+    }
+  }
+
+  &.white {
+    background: @gray;
+    z-index: 10;
+    position: absolute;
+  }
+
+}
+
+pre, code {
+  margin: 0;
+  overflow: auto;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  section .content {
+    text-align: center;
+
+    code, pre {
+      text-align: left;
+      font-size: 0.9em;
+    }
+  }
+}
+
+@media screen and (max-width: 620px){
+  section.teaser {
+    padding-left:  0px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.teaser h1 {
+    font-size: 45px;
+  }
+}
