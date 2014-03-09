@@ -2,7 +2,7 @@
 
 ---
 
-a simple mixin creating a longshadow effect, inspired by ![http://mattlambert.ca/blog/create-a-flat-long-shadow-icon-with-css3/](Matt Lambert)
+a simple mixin creating a longshadow effect, inspired by [Matt Lambert](http://mattlambert.ca/blog/create-a-flat-long-shadow-icon-with-css3/)
 
 ## short guide
 
@@ -18,4 +18,4 @@ h1.shadow {
 }
 ```
 
-For more information, see ![http://thephpjo.de/longshadow](http://thephpjo.de/longshadow)
+For more information, see [http://thephpjo.de/longshadow](http://thephpjo.de/longshadow)
