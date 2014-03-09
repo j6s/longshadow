@@ -19,7 +19,7 @@ module.exports = function(grunt) {
           'ieCompat': false,
         },
         files: {
-          'demo.css': 'LESS/demo.less'
+          'demo.css': 'LESS/__demofiles/demo.less'
         },
       }
     },

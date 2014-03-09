@@ -1,0 +1,3 @@
+[submodule "LESS/__demofiles/monoicons"]
+	path = LESS/__demofiles/monoicons
+	url = git@github.com:drinchev/monosocialiconsfont.git
